@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Adw Dev</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">Adw Dev</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- end navbar -->
+
+    <!-- sidenav -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <!-- end sidenav -->
+
+    <!-- slider -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/WallpaperDog-11005230.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/WallpaperDog-11005294.png"> <!-- random image -->
+                <div class="caption left-align">
+                    <h3>Left Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/984658.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                    <h3>Right Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/428346683f6f1416a5ce6b2208174447.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- end slider -->
+
+    <!-- about -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <h3 class="center grey-text text-darken-3">About</h3>
+                <div class="col m6 light">
+                    <h5>We Are Professionals</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto nam harum ipsam soluta
+                        quibusdam dolores veniam sit, omnis cupiditate veritatis repudiandae voluptate asperiores cum at
+                        provident quae vitae? Nisi, cum!</p>
+                </div>
+                <div class="col m6 light">
+                    <h6>Web Development</h6>
+                    <div class="progress">
+                        <div class="determinate" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="col m6 light">
+                    <h6>Android Development</h6>
+                    <div class="progress">
+                        <div class="determinate" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="col m6 light">
+                    <h6>Game Development</h6>
+                    <div class="progress">
+                        <div class="determinate" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about -->
+
+    <!-- clients -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/mountains-5260303_1920.jpg"></div>
+
+        <div class="container clients">
+            <h3 class="center light white-text">Our Clients</h3>
+            <div class="row">
+                <div class="col m4 s12 center">
+                    <img src="img/Artboard 1.png" alt="">
+                </div>
+                <div class="col m4 s12 center">
+                    <img src="img/tokopedia-logo-40654CCDD6-seeklogo.com.png" alt="">
+                </div>
+                <div class="col m4 s12 center">
+                    <img src="img/php-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end clients -->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+        const sideNav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sideNav);
+
+        const slider = document.querySelectorAll('.slider');
+        M.Slider.init(slider, {
+            indicators: false,
+        });
+
+        const parallax = document.querySelectorAll('.parallax');
+        M.Parallax.init(parallax);
+    </script>
+</body>
+
+</html>
