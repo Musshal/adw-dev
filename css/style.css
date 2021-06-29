@@ -1,4 +1,4 @@
-.slider h3, .slider h5, .clients h3{
+.slider h3, .slider h5, .clients h3, .services h3, .portfolio h3 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -13,5 +13,13 @@
 
 .clients img {
     max-width: 150px;
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .8));
+    filter: drop-shadow(1px 1px 1px rgba(82, 43, 43, 0.8));
+}
+
+section, footer {
+    padding: 20px 0;
+}
+
+.contact-form {
+    height: 518px;
 }
